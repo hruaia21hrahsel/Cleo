@@ -8,16 +8,18 @@ Cleo is an AI assistant project currently in early development. The stack and ar
 
 ## Git & GitHub Workflow
 
-This project uses Git with all changes committed and pushed to GitHub after meaningful work.
+**Every session must commit and push work to GitHub. No work should be left uncommitted.**
 
 - **Remote**: https://github.com/hruaia21hrahsel/Cleo (`master` branch)
-- **Always** commit completed work and push to GitHub — this is the primary backup and versioning mechanism
-- Write clean, descriptive commit messages that explain *why*, not just *what*
-- Include the Co-Authored-By trailer on all commits:
+- After completing any meaningful unit of work — a new file, a feature, a fix, a config change — commit and push immediately. Do not batch unrelated changes into one commit.
+- Before ending a session or switching tasks, ensure all work is committed and pushed so nothing is ever lost.
+- Write clean, descriptive commit messages that explain *why*, not just *what*. Use the imperative mood (e.g. "Add login route" not "Added login route").
+- Include the Co-Authored-By trailer on every commit:
   ```
   Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
   ```
-- Prefer small, focused commits over large catch-all ones
+- Prefer small, focused commits over large catch-all ones — each commit should represent one logical change.
+- Always run `git push` after committing. A local-only commit is not a safe backup.
 
 ## Repository Structure
 
